@@ -72,8 +72,8 @@ export const mockupsService = {
   },
 
   async bulkUploadMockups(sourceId: string, uploads: MockupUploads): Promise<void> {
-    const uploadPromises = Object.entries(uploads).map(([_, data]) => 
-      mockupUploadService.upload(data.file, sourceId, data.format, data.label)
+    const uploadPromises = Object.entries(uploads).map(([formatKey, data]) => 
+      mockupUploadService.upload(data.file, sourceId, formatKey, data.label)
     );
 
     const results = await Promise.all(uploadPromises);

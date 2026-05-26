@@ -16,6 +16,7 @@ export type MockupFormatSpec = {
 export type Mockup = {
   id: string;
   publication_source_id: string;
+  default_font_family?: string | null;
   format: MockupFormat;
   name: string;
   description: string | null;

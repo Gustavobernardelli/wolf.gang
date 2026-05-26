@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import type { MockupFormat } from '@/types/mockup';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface AspectRatioFrameProps {
   format: MockupFormat;
