@@ -1,0 +1,38 @@
+import { z } from 'zod';
+
+export const textRegionSchema = z.object({
+  id: z.string(),
+  role: z.enum(['headline', 'kicker', 'credit', 'subtitle', 'custom']),
+  label: z.string().min(1, 'Label é obrigatório'),
+  x: z.number(),
+  y: z.number(),
+  width: z.number().min(10),
+  height: z.number().min(10),
+  rotation: z.number(),
+  alignment: z.enum(['left', 'center', 'right']),
+  vertical_alignment: z.enum(['top', 'middle', 'bottom']),
+  font_family: z.string(),
+  font_weight: z.number(),
+  font_size_px: z.number().min(8),
+  line_height: z.number().min(0.5).max(3),
+  letter_spacing: z.number(),
+  color: z.string().regex(/^#[0-9A-Fa-f]{6}$|^#[0-9A-Fa-f]{8}$/),
+  stroke: z.object({
+    enabled: z.boolean(),
+    color: z.string(),
+    width: z.number(),
+  }),
+  shadow: z.object({
+    enabled: z.boolean(),
+    color: z.string(),
+    blur: z.number(),
+    offset_x: z.number(),
+    offset_y: z.number(),
+  }),
+  uppercase: z.boolean(),
+  max_lines: z.number().min(1),
+  auto_shrink: z.boolean(),
+  auto_shrink_min_size: z.number(),
+  placeholder_text: z.string(),
+  z_index: z.number(),
+});

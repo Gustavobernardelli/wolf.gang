@@ -1,0 +1,31 @@
+# Supabase Project Reference
+# ================================================
+# Este projeto está vinculado ao seguinte projeto
+# do Supabase. Use este ID em todos os comandos
+# CLI, configurações de MCP e variáveis de ambiente.
+#
+# Project ID  : atkstqfnwdbwhplukkiq
+# Dashboard   : https://supabase.com/dashboard/project/atkstqfnwdbwhplukkiq
+# DB Host     : db.atkstqfnwdbwhplukkiq.supabase.co
+# API URL     : https://atkstqfnwdbwhplukkiq.supabase.co
+# Owner       : politica.curada@gmail.com
+# Region      : West US (North California)
+# ================================================
+#
+# Comandos CLI (executar na raiz do projeto):
+#
+#   Vincular (já feito):
+#   $env:SUPABASE_ACCESS_TOKEN = "<token>"; .\supabase.exe link --project-ref atkstqfnwdbwhplukkiq
+#
+#   Criar migration:
+#   $env:SUPABASE_ACCESS_TOKEN = "<token>"; .\supabase.exe migration new <nome>
+#
+#   Aplicar migrations:
+#   $env:SUPABASE_ACCESS_TOKEN = "<token>"; .\supabase.exe db push
+#
+#   Executar SQL direto:
+#   $env:SUPABASE_ACCESS_TOKEN = "<token>"; .\supabase.exe db query --linked "<SQL>"
+#
+#   Deploy de Edge Function:
+#   $env:SUPABASE_ACCESS_TOKEN = "<token>"; .\supabase.exe functions deploy <nome>
+# ================================================
